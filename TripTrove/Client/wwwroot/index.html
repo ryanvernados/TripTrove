@@ -17,6 +17,18 @@
 </head>
 
 <body>
+    <script>
+        function BlazorScrollToId(id) {
+            const element = document.getElementById(id);
+            if (element instanceof HTMLElement) {
+                element.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                    inline: "nearest"
+                });
+            }
+        }
+    </script>
     <div id="app">
         <svg class="loading-progress">
             <circle r="40%" cx="50%" cy="50%" />
@@ -33,6 +45,7 @@
     <script src="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
+    <script src="js/scrollAnimations.js"></script>
 </body>
 
 </html>

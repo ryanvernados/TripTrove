@@ -1,4 +1,5 @@
 ﻿@page "/"
+@inject IJSRuntime js
 
 <PageTitle>Index</PageTitle>
 
@@ -9,7 +10,7 @@
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
-            <a href="#home">Home</a>
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
@@ -28,12 +29,171 @@
                 <a href=""><i class='bx bxl-instagram'></i></a>
                 <a href=""><i class='bx bxl-linkedin'></i></a>
             </div>
+            <a href="#" class="btn">Download CV</a>
         </div>
 
 
         <div class="home-img">
             <img src="images/home.png" alt="" />
         </div>
-
     </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="" />
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <a href="#" class="btn">Read More</a>
+        </div>
+        
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="bx bxs-paint"></i>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="bx bx-bar-chart-alt"></i>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="" />
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg" alt="" />
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg" alt="" />
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio4.jpg" alt="" />
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio5.jpg" alt="" />
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio6.jpg" alt="" />
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name"/>
+                <input type="email" placeholder="Email Address"/>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" />
+                <input type="text" placeholder="Email Subject" />
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn" />
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Ryan | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+    <script>
+        function BlazorScrollToId(id) {
+            const element = document.getElementById(id);
+            if (element instanceof HTMLElement) {
+                element.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                    inline: "nearest"
+                });
+            }
+        }
+    </script>
+    
 </body>
+
+
+<AnchorNavigation />
+
+@code {
+    string GetId(int i) => "header-" + i;
+    string GetHref(int i) => "#" + GetId(i);
+
+    protected override async Task OnAfterRenderAsync(bool render)
+    {
+        if (render)
+        {
+            await js.InvokeVoidAsync("initialiseScrollAnimations");
+        }
+    }
+
+    
+    
+
+}

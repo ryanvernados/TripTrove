@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripTrove.Server", "TripTrove\Server\TripTrove.Server.csproj", "{7CF71310-5B7A-4929-B923-F1E1E999CB04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TripTrove.Server", "TripTrove\Server\TripTrove.Server.csproj", "{7CF71310-5B7A-4929-B923-F1E1E999CB04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripTrove.Client", "TripTrove\Client\TripTrove.Client.csproj", "{893A9042-0AA5-4F66-86F4-5912D19B3639}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TripTrove.Client", "TripTrove\Client\TripTrove.Client.csproj", "{893A9042-0AA5-4F66-86F4-5912D19B3639}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripTrove.Shared", "TripTrove\Shared\TripTrove.Shared.csproj", "{789BF451-CB35-48B3-BE02-C6844FE7C830}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TripTrove.Shared", "TripTrove\Shared\TripTrove.Shared.csproj", "{789BF451-CB35-48B3-BE02-C6844FE7C830}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
