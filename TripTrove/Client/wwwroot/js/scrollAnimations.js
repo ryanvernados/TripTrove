@@ -1,3 +1,18 @@
+function initialiseToggleIconNavBar() {
+    let menuIcon = document.querySelector("#menu-icon");
+    let navBar = document.querySelector(".navbar");
+
+    menuIcon.onclick = () => {
+        menuIcon.classList.toggle("bx-x");
+        navBar.classList.toggle("active");
+    }
+
+    menuIcon.classList.remove("bx-x");
+    navBar.classList.remove("active");
+}
+
+
+
 function initialiseScrollAnimations() {
     let sections = document.querySelectorAll("section");
     let navLinks = document.querySelectorAll("header nav a");
@@ -18,4 +33,34 @@ function initialiseScrollAnimations() {
             }
         })
     }
+}
+
+function initialiseStickyNavBar() {
+    let header = document.querySelector("header");
+
+    header.classList.toggle("sticky", window.scrollY > 100);
+}
+
+function initialiseScrollReveal() {
+    ScrollReveal({
+        // reset: true,
+        distance: '80px',
+        duration: 2000,
+        delay: 200
+    });
+
+    ScrollReveal().reveal('.home-content, .heading', { origin: "top" });
+    ScrollReveal().reveal('.home-img, .service-container, .portfolio-box, .contact form', { origin: "bottom" });
+    ScrollReveal().reveal('.home-content h1, .about-img', { origin: "left" });
+    ScrollReveal().reveal('.home-content p, .about-content', { origin: "right" });
+}
+
+function initialiseTypedJs() {
+    const typed = new Typed('.multiple-text', {
+        strings: ['Create', 'Plan', 'Build', 'WHY I AM HERE'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true
+    });
 }
