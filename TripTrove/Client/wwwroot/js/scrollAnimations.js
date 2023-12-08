@@ -57,7 +57,7 @@ function initialiseScrollReveal() {
 
 function initialiseTypedJs() {
     const typed = new Typed('.multiple-text', {
-        strings: ['Create', 'Plan', 'Build', 'WHY I AM HERE'],
+        strings: ['Create', 'Plan', 'Build'],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,

@@ -10,12 +10,6 @@
   <ItemGroup>
     <None Include="wwwroot\images\about.png" />
     <None Include="wwwroot\images\home.png" />
-    <None Include="wwwroot\images\portfolio1.jpg" />
-    <None Include="wwwroot\images\portfolio2.jpg" />
-    <None Include="wwwroot\images\portfolio3.jpg" />
-    <None Include="wwwroot\images\portfolio4.jpg" />
-    <None Include="wwwroot\images\portfolio5.jpg" />
-    <None Include="wwwroot\images\portfolio6.jpg" />
   </ItemGroup>
 
   <ItemGroup>

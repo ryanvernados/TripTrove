@@ -56,6 +56,7 @@ section {
 .navbar a {
     font-size: 1.7rem;
     margin-left: 4rem;
+    text-decoration: none;
 }
 
 .navbar a:hover,
@@ -110,7 +111,9 @@ home-content h3:nth-of-type(2) {
 
 .home-content p {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
+
 
 span {
     color: #0ef;
@@ -424,6 +427,7 @@ span {
         background: #1f242d;
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
     }
 
     .navbar.active {
