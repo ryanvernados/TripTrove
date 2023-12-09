@@ -29,10 +29,12 @@
                 <label asp-for="Input.ConfirmPassword">Confirm Password</label>
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            <input type="radio" id="traveller" name="user_type" value="Traveller" />
-            <label for="traveller">Traveller</label>
-            <input type="radio" id="travelagent" name="user_type" value="Travel Agent" />
-            <label for="travelagent">Travel Agent</label>
+            <div>
+                <input type="radio" id="traveller" name="user_type" value="Traveller" />
+                <label for="traveller">Traveller</label>
+                <input type="radio" id="travelagent" name="user_type" value="Travel Agent" />
+                <label for="travelagent">Travel Agent</label>
+            </div>
             <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
 
         </form>
