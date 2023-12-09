@@ -50,7 +50,7 @@ function initialiseScrollReveal() {
     });
 
     ScrollReveal().reveal('.home-content, .heading', { origin: "top" });
-    ScrollReveal().reveal('.home-img, .service-container, .portfolio-box, .contact form', { origin: "bottom" });
+    ScrollReveal().reveal('.home-img, .service-container, .portfolio-box, .contact form, .review-content',  { origin: "bottom" });
     ScrollReveal().reveal('.home-content h1, .about-img', { origin: "left" });
     ScrollReveal().reveal('.home-content p, .about-content', { origin: "right" });
 }
@@ -65,26 +65,3 @@ function initialiseTypedJs() {
     });
 }
 
-
-$(document).ready(function () {
-    var silder = $(".owl-carousel");
-    silder.owlCarousel({
-        autoPlay: false,
-        items: 1,
-        center: false,
-        nav: true,
-        margin: 40,
-        dots: false,
-        loop: true,
-        navText: ["<i class='fa fa-arrow-left' aria-hidden='true'></i>", "<i class='fa fa-arrow-right' aria-hidden='true'></i>"],
-        responsive: {
-            0: {
-                items: 1,
-            },
-            575: { items: 1 },
-            768: { items: 2 },
-            991: { items: 3 },
-            1200: { items: 4 }
-        }
-    });
-});
