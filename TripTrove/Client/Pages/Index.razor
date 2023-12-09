@@ -1,7 +1,12 @@
 ﻿@page "/"
 @inject IJSRuntime js
-
 <PageTitle>Trip Trove</PageTitle>
+
+<AuthorizeView>
+    <Authorized>
+        <h1 style="color: black">Hello</h1>
+    </Authorized>
+    <NotAuthorized>
 <body>
     <!--
     <header class="header">
@@ -242,9 +247,6 @@
     </script>
     
 </body>
-
-<AnchorNavigation />
-
 @code {
     string GetId(int i) => "header-" + i;
     string GetHref(int i) => "#" + GetId(i);
@@ -262,4 +264,6 @@
     }
 
 
-}
+        }
+    </NotAuthorized>
+</AuthorizeView>
