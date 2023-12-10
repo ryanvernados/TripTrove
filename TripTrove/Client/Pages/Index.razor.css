@@ -116,7 +116,6 @@ home-content h3:nth-of-type(2) {
 .background-withcolor {
     background-image: -moz-linear-gradient(-45deg, rgb(54, 209, 220) 0%, rgb(91, 134, 229) 70%);
     background-image: -webkit-linear-gradient(-45deg, rgb(54, 209, 220) 0%, rgb(91, 134, 229) 70%);
-    background-image: -ms-linear-gradient(-45deg, rgb(54, 209, 220) 0%, rgb(91, 134, 229) 70%);
 }
 
 
@@ -231,7 +230,6 @@ span {
         flex: 1 1 30rem;
         background-image: -moz-linear-gradient(-45deg, rgb(54, 209, 220) 0%, rgb(91, 134, 229) 70%);
         background-image: -webkit-linear-gradient(-45deg, rgb(54, 209, 220) 0%, rgb(91, 134, 229) 70%);
-        background-image: -ms-linear-gradient(-45deg, rgb(54, 209, 220) 0%, rgb(91, 134, 229) 70%);
         padding: 3rem 2rem 4rem;
         border-radius: 2rem;
         text-align: center;
