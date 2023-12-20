@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,16 +9,13 @@ namespace TripTrove.Shared.Domain
 {
     public class Activity
     {
-        public int ActivityID { get; set; }
-        public int TripId { get; set; }
-        public virtual Trip? Trip { get; set; }
-        public string Airline { get; set; }
-        public DateTime DepatureTime { get; set; }
-        public DateTime ArrivalTime { get; set; }
-        public string DepatureAirport { get; set; }
-        public string ArrivalAirport { get; set; }
-        public string TicketNumber { get; set; }
-        public string SeatNumber { get; set; }
+        public int ActivityId { get; set; }
+        public string Name {  get; set; }
+        public string Description { get; set; }
+        public string Location { get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
+        public string Category { get; set; }
         public double Cost { get; set; }
     }
 }
