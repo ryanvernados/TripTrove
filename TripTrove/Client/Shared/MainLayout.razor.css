@@ -1,82 +1,182 @@
-.page {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99%;
+    padding: 1rem 9%;
     color: #fff;
-}
-
-main {
-    flex: 1;
-}
-
-.sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
-}
-
-.top-row {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    z-index: 100;
+    background-image: -moz-linear-gradient(-45deg, rgb(54, 209, 220) 0%, rgb(91, 134, 229) 70%);
+    background-image: -webkit-linear-gradient(-45deg, rgb(54, 209, 220) 0%, rgb(91, 134, 229) 70%);
+    background-image: -ms-linear-gradient(-45deg, rgb(54, 209, 220) 0%, rgb(91, 134, 229) 70%);
 }
 
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-        text-decoration: none;
+
+    .header .sticky {
+        border-bottom: .1rem solid rgba(0, 0, 0, .2);
     }
 
-        .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
-            text-decoration: underline;
-        }
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
 
-        .top-row ::deep a:first-child {
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+.navbar a {
+    font-size: 1.7rem;
+    margin-left: 4rem;
+}
 
-@media (max-width: 640.98px) {
-    .top-row:not(.auth) {
+    .navbar a:hover,
+    .navbar a:active {
+        color: #0ef;
+    }
+
+.active {
+    color: #0ef;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: #fff;
+    display: none;
+}
+
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .services {
+        padding-bottom: 7rem;
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+    .contact {
+        padding-bottom: 7rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: #1f242d;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         display: none;
     }
 
-    .top-row.auth {
-        justify-content: space-between;
+        .navbar.active {
+            display: block;
+        }
+
+        .navbar a {
+            display: block;
+            font-size: 2rem;
+            margin: 3rem 0;
+        }
+
+    .home {
+        flex-direction: column;
     }
 
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        margin-left: 0;
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+        .about img {
+            width: 70vw;
+            margin-top: 4rem;
+        }
+
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 641px) {
-    .page {
-        flex-direction: row;
+@media (max-width: 617px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
     }
 
-    .sidebar {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
+    .contact form .input-box input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 365px) {
+    .home-img img {
+        width: 90vw;
     }
 
-    .top-row {
-        position: sticky;
-        top: 0;
-        z-index: 1;
+    .about-img img {
+        width: 90vw;
     }
 
-        .top-row.auth ::deep a:first-child {
-            flex: 1;
-            text-align: right;
-            width: 0;
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+        .footer p {
+            text-align: center;
+            margin-top: 2rem;
         }
-
-    .top-row, article {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
 }

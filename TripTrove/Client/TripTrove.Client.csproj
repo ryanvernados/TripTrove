@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Include="wwwroot\images\about.png" />
+    <None Include="wwwroot\images\AgentBanner.jpg" />
     <None Include="wwwroot\images\home.png" />
   </ItemGroup>
 
