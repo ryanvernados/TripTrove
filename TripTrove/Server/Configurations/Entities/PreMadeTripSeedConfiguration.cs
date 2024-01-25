@@ -156,6 +156,8 @@ namespace TripTrove.Server.Configurations.Entities
                     Included = "Grand Wyndham Levent,Mövenpick Bursa Hotel, Ankara HiltonSA, DoubleTree by Hilton Avanos, Novotel Konya Hotel",
                     StartDates = new DateTime(2024, 9, 11),
                     EndDates = new DateTime(2024, 9, 17)
+
+
                 }
 
 
