@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace TripTrove.Shared.Domain
 {
-    internal class Payment
+    public class Payment
     {
-       public string? paymentId {  get; set; }
-        public string? paymentMethod { get; set;}
-        public string? paymentDate { get; set;}
-        public string? transactionDetail { get; set;}
-        public int? amount { get; set;}
+       public string? PaymentId {  get; set; }
+        public string? PaymentMethod { get; set;}
+        public string? PaymentDate { get; set;}
+        public string? TransactionDetail { get; set;}
+        public int? Amount { get; set;}
         public int TravellerId { get; set; }
         public int BookingId { get; set; }
 

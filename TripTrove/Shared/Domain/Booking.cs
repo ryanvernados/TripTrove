@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TripTrove.Shared.Domain
 {
-    internal class Bookings
+    public class Booking
     {
-        public int? BookingsId {  get; set; }
+        public int? BookingId {  get; set; }
         public int? PreMadeTripId { get; set; }
         public int? TravellerId { get; set;}
         public int? TravelAgentId { get; set;}
